@@ -7,7 +7,7 @@ var multer = require('multer');
 var mongoose = require('mongoose');
 var ctrl = require('./controller.js')
 // require and use "multer"...
-var upload = multer({ dest: 'uploads/' })
+var upload = multer({ dest: 'public/files/' })
 var app = express();
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true});
 app.use(cors());
